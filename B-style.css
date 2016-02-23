@@ -1,0 +1,69 @@
+body {
+	background: black;
+	
+	
+}
+h1 {
+	font-family: impact;
+	color: white;
+	font-size: 4em;
+	text-align: center;
+}
+
+#rules {
+	color: white;
+	font-size: 1.25em;
+	text-align: center;
+	float: left;
+	width: 30%;
+	margin: 1%;
+}
+#beatles {
+	float: left;
+	border: 3px solid white;
+	width: 30%;
+	margin: 1%;
+	
+}
+#beats {
+	float: left;
+	width: 30%;
+	margin: 1%;
+}
+#lineOfButtons {
+	clear:both;
+	text-align: center;
+}
+#secondLine {
+	text-align: center;
+}
+.choice {
+	color: black;
+	border-radius: 10%;
+	background-color: white;
+	font-family: impact;
+	font-size: 2em;
+	padding: .25em;
+	border: none;
+	margin: 40px 15px 20px 15px;
+}
+#quest {
+	color: white;
+	border-radius: 10%;
+	background-color: gray;
+	font-family: impact;
+	font-size: 2em;
+	padding: .25em;
+	border: white solid 2px;
+	margin: 40px 15px 0 15px;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	font-size: 25;
+	margin: .25em 0 3em 0;
+
+}
+
+
