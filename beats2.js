@@ -7,8 +7,8 @@ $(document).ready(function(){
 		$('#rules').text(listQuest[arrPosition].query + '...Beatles or Beat?');
 	});
 	$('.choice').on('click', function() {
-		if ($(this).attr("value") == listQuest[arrPosition].answer) {
-		$('#rules').text('Correct! ' + listQuest[arrPosition].explanation);
+		if ($(this).text() == listQuest[arrPosition].answer) {
+			$('#rules').text('Correct! ' + listQuest[arrPosition].explanation);
 		questionsCorrect += 1;
 	}
 		else {
@@ -16,10 +16,12 @@ $(document).ready(function(){
 		}
 		arrPosition += 1;
 		questionsAnswered += 1;
+
 		if (arrPosition < listQuest.length) {
 			$('#quest').text('question #' + (arrPosition + 1));
 		}
-		$('#tally').text(footer);
+	    var count = questionsCorrect + " out of " + questionsAnswered + "  questions correct";
+		$('#tally').text(count);
 	});
   
 function question(query, answer, explanation) {
@@ -33,7 +35,6 @@ var question3 = new question("Yellow matter custard, Dripping from a dead dog\'s
 var question4 = new question('You were not there for the beginning. You will not be there for the end.', 'Beat', 'Line #4 is from the William S. Burroughs novel, "Naked Lunch". Click on the next question.');
 var question5 = new question("Let\'s all get up and dance to a song that was a hit before your mother was born", 'Beatles', 'Line #5 is from the Beatles song, "Your Mother Should Know". Good game!');
 var listQuest = [question1, question2, question3, question4, question5];
-var footer = questionsCorrect + " out of " + questionsAnswered + " correct";
 });
 
 
