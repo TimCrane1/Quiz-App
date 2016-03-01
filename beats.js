@@ -1,4 +1,5 @@
 
+/* look at beats2.js
 $(document).ready(function(){
 	$('#quest').on('click', function() {
 		var i =0;
